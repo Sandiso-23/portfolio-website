@@ -1,33 +1,93 @@
-body{
+/* ===== Global Styles ===== */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;/*------------FONT COLOR ------------------*/
+    background-color: #eb5bd5;
+    color: #333;
     margin: 0;
-    padding: 0;/*------------SPACES IN-BETWEEN ------------------*/
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-header{
-    background: #007bff;/*------------HEADER BACKGROUND COLOR ------------------*/;
-    color: white;/*------------HEADER FONT COLOR ------------------*/
-    padding : 20px;
-    text-align: center;/*------------HEADER TEXT ALIGNMENT ------------------*/
+/* ===== Header ===== */
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-section{
+header p {
+    font-size: 1.2rem;
+}
+
+/* ===== Section Layout ===== */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(255, 228, 196, 0.95); /* semi-transparent bisque */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* ===== Project List Styling ===== */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;/*------------SECTION MARGIN ------------------*/
-    max-width: 600px;/*------------SECTION MAX WIDTH ------------------*/
-    background-color: bisque;/*------------SECTION BACKGROUND COLOR ------------------*/
-    border-radius: 15px;/*------------SECTION BORDER RADIUS ------------------*/
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about{
+header,
+footer {
+    text-align: center;
     padding: 20px;
+    background: linear-gradient(to right, #007bff, #6610f2); /* or any color you prefer */
+    color: white;
+    font-size: 0.95rem;
 }
 
-footer{
-    text-align: center;/*------------FOOTER TEXT ALIGNMENT ------------------*/
-    padding: 10px;
-    background: #007bff;/*------------FOOTER BACKGROUND COLOR ------------------*/
+.social-media {
+    margin-top: 15px;
 }
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+.profile-image {
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;      /* Makes the image circular */
+    object-fit: cover;
+    object-position: top center;       /* Ensures the image fills the circle */
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image and adds space below */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow */
+    border: 3px solid #007bff; /* Optional: colored border */
+}
+
